@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Certificate Generator</h1>
+        <form id="certForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="course">Course Name:</label>
+            <input type="text" id="course" required>
+            <label for="appreciation">Appreciation:</label>
+            <select id="appreciation" required>
+             <option value="ممتاز">ممتاز</option>
+             <option value="جيد جدا">جيد جدا</option>
+             <option value="جيد">جيد</option>
+             <option value="مقبول">مقبول</option>
+            </select><br><br>
+            <label for="teacher">Subject teacher Name:</label>
+            <input type="text" id="teacher" required>
+            <button type="submit">Generate Certificate</button>
+        </form>
+        <canvas id="certificateCanvas" width="566" height="400"></canvas>
+        <a id="downloadLink" download="certificate.png">Download Certificate</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
